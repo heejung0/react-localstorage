@@ -7,7 +7,7 @@ const Header = () => (
     <div className="navbar">
       <a href="/" className="navbar-brand">
         <span className="logo">😎</span>
-        <strong>GDG on CAU</strong>
+        <strong>GDG on Campus CAU</strong>
       </a>
     </div>
   </header>
@@ -137,7 +137,7 @@ const EasterEggModal = ({ isOpen, onClose }) => {
         <h3>We studied with</h3>
         1. javascript of 코딩앙마<br></br>
         2. react of Nomadcoders
-        <h3>다들 고생 많았고 기말고사 화이팅~!💪🏻</h3>
+        <h3>2025년엔 행복한 일들만 있길!!🍀</h3>
         <button className="btn secondary" onClick={onClose}>
           Close
         </button>
@@ -161,7 +161,7 @@ const Main = ({ isAddModalOpen, setIsAddModalOpen }) => {
   const addCard = (newCard) => {
     const updatedCards = [newCard, ...cards];
     setCards(updatedCards);
-    localStorage.setItem("cards", JSON.stringify(updatedCards));
+    localStorage.setItem("cards", JSON.stringify(updatedCards)); // localstorage에 저장
     setIsAddModalOpen(false);
   };
 
@@ -242,7 +242,7 @@ const Footer = () => (
       <a href="#">Back to top</a>
     </p>
     <p>
-      2024 GDG on CAU FE_LO Study 
+      2024 GDG on Campus CAU FE_LO Study 
     </p>
   </footer>
 );
